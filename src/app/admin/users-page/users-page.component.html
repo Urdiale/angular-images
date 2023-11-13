@@ -1,2 +1,5 @@
-<div [style.background-image]="'url(https://api.slingacademy.com/public/sample-photos/1.jpeg)'"
-    [style.width.px]="2000" [style.height.px]="1000">oi</div>
+<li  *ngFor="let image of dataImages">
+    <h2>{{image.title}}</h2>
+    <img src="{{image.url}}" alt="">
+</li>
+<button type="button" class="btn btn-secondary">Secondary</button>
